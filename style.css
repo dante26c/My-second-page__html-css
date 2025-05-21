@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@1,250&display=swap');
+@import url('');
+html, body {
+    margin: 0;
+  padding: 0;
+  background-color: #d3cccc; /* Light gray, change to any color you like */
+}
+.header-image {
+  margin: none; /* No margin */
+  padding: none; /* No padding */
+  width: 100%;         /* Makes the image span the full width */
+  max-height: 250px;   /* Sets a maximum height */
+  object-fit: cover;   /* Ensures the image covers the area nicely */
+  object-position: top center ;
+  display: block;      /* Removes any extra space below the image */
+  position: relative; /* Allows for absolute positioning of child elements */
+    z-index: 1;        /* Ensures the image is on top */
+}
+header {
+   background-color: rgba(198, 126, 17, 0.415);}
+h1 {
+  font-family: 'Sour Gummy', cursive;
+  font-size: 50px; /* Font size */
+  color: #FF5733; /* Text color */
+  text-align: center; /* Centered text */
+  margin-top: 0px; /* Space from the top */
+  margin-bottom: -10px; /* Space from the bottom */
+  padding: 0; /* No padding */
+}
+.title-d1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 1.3em;
+  color: #171616;
+  padding-bottom: 5px;
+}
+nav {
+  background-color: rgba(17, 198, 195, 0.216);
+}
+nav ul {
+    font-family: cursive;
+  display: flex; 
+  list-style: none ; /* Removes bullets */
+    justify-content: space-around; 
+  padding: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 0;
+  margin-right: 40px; /* Space from the right edge */
+  margin-top: 0px; /* Space from the top */
+}
+nav ul li {
+  margin-right: 10px; /* Space between items */
+}
+.content {
+  margin-left: 5px; /* Adds space to the left */
+  margin-right: 5px; /* Adds space to the right */
+  word-wrap: normal;
+}
+.h1-2 {
+  color: #FF5733;        /* Change to any color you like */
+  text-align: center;      /* Options: left, center, right */
+  margin-left: 30px;     /* Move it to the right */
+  margin-top: 0px;      /* Space above the heading */
+  margin-bottom: 10px;
+  font-size: 2.2em;      /* Adjust size as needed */
+  letter-spacing: 2px;   /* Optional: spacing between letters */
+}
+.h1-2-2 {
+ font-family:'Sour Gummy', cursive;
+  color: #FF5733;        /* Change to any color you like */
+  text-align: left;      /* Options: left, center, right */
+  margin-left: 10px;     /* Move it to the right */
+  margin-top: 0px;      /* Space above the heading */
+  margin-bottom: -20px;
+  font-size: 2.2em;      /* Adjust size as needed */
+  letter-spacing: 2px;   /* Optional: spacing between letters */
+}
+
+.pet-gallery {
+  display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */ 
+  gap: 50px;              /* Space between cards */
+  justify-content: flex-start;
+  margin-left: 12px; 
+    margin-right: 12px;
+    flex-wrap: wrap;
+  /* overflow-x: auto;       Allows horizontal scrolling if needed */
+}
+
+.pet-card {
+  display: flex;
+  align-items: center;
+  background: #1ca6b056;
+  border: 0px solid #FF5733;
+  border-radius: 12px; 
+  padding: 12px 18px;
+  /* box-shadow: 0 2px 8px rgba(255,87,51,0.08); */
+  min-width: 350px;       /* Ensures enough space for image + text */
+}
+
+.pet-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+.adopt-btn {
+  font-family: 'Sour Gummy', cursive;
+  font-weight: 40;
+  font-style: normal; 
+  text-align: center;
+  margin-top: 8px;
+  padding: 8px 18px;
+  background-color: #008432;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s; 
+}
+.adopt-btn:hover {
+  background-color: #58f697;
+    color: #aca5a5;
+}
+.adopt-btn:active {
+  background-color: #2b2e2d;
+  color: #fff;
+}
+.see-more {
+  
+  font-family: 'Sour Gummy', cursive;
+  font-weight: 40;
+  font-style: normal; 
+  text-align: center;
+  margin: 24px auto 0 auto; /* Center horizontally with auto margins */
+  display: block;         /* Make it a block element for centering */
+  width: fit-content;     /* Shrink to fit content */
+  padding: 10px 24px;
+  background-color: #0084337a;
+  color: #c49207;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s; 
+  text-decoration: none; /* Remove underline from link */
+}
+.see-more:hover {
+  background-color: #080808;
+    color: #eee8e8;
+}
+.endtext {
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: normal;
+}
+.textlink-end {
+ text-decoration: none;
+  color: #1c72f29f;
+  font-family: cursive;
+}
+.textlink-end:hover {
+  color: #1c4ef2;
+}
+.social-media {
+  justify-content: space-around;
+    display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  margin: 1px 0px;
+  padding: 0px; 
+}
+.lasttext {
+  font-family: cursive;
+  font-size: 1.2em;
+  color: #171616;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+footer {
+  background-color: rgba(17, 198, 195, 0.485);
+  text-align: center;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 5px;
+  font-family: cursive;
+}
